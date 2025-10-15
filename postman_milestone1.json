@@ -1,0 +1,76 @@
+{
+  "info": {
+    "name": "Ecom Milestone 1",
+    "_postman_id": "ecom-m1-0001",
+    "description": "Initial scaffold: health + users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health - GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3200/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3200",
+          "path": [
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get users - GET /api/users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3200/api/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3200",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Register - POST /api/users/register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Test User\",\"email\":\"test@example.com\",\"password\":\"Password1\"}"
+        },
+        "url": {
+          "raw": "http://localhost:3200/api/users/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3200",
+          "path": [
+            "api",
+            "users",
+            "register"
+          ]
+        }
+      }
+    }
+  ]
+}

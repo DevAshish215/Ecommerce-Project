@@ -1,0 +1,8 @@
+# Ignore node modules
+node_modules/
+
+# Ignore environment example file
+.env.example
+
+# Ignore uploaded files folder
+uploads/
