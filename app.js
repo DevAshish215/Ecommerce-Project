@@ -30,7 +30,7 @@ app.use("/api/users", userRouter);
 
 // Example protected route group (we'll add product routes later). Protected by JWT middleware example:
 app.use("/api/products", jwtAuth, (req, res) => {
-  res.status(200).json({ message: "Products endpoint (protected) - coming soon" });
+  res.status(200).json({ message: "Products endpoint (protected) - coming soon, Change 1" });
 });
 
 // Central error handler (last)
